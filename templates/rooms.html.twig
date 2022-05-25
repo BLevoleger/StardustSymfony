@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}ROOMS{% endblock %}
+{% block body %}
+    <h1>ROOMS</h1>
+    {% for room in rooms %}
+        {{ room.name }} <br>
+        {{ room.description }} <br>
+        <img src="/img/{{ room.img }}" alt=""> <br>
+        {{ room.price }} <br><br>
+    {% endfor %}
+{% endblock %}
